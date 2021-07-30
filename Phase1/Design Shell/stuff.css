@@ -1,0 +1,42 @@
+.header{
+    background: rosybrown;
+    height 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+.display {
+    background-color: tan;
+    padding: 20px;
+    width: 480px;
+    color: black;
+    border-color: black;
+    text-align: right;
+    font-size: 25px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+button {
+    padding: 20px;
+    width: 127px;
+    height: 90px;
+    border-color: black;
+    margin-top: 10px;
+    background-color:papayawhip;
+    color: black;
+    font-size: 20px;
+}
+.footer{
+    background: tan;
+    height 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+}
+
+

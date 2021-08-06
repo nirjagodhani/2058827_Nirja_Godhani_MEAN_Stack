@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Simply Blogging</title>
+    <script src="AddBlog.js"></script>
+
+
+</head>
+<body style = "background-color: lightblue;">
+
+    <nav class="navbar sticky-top navbar-dark bg-info">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <a class="navbar-brand" href="about.html">About Us</a>
+        <a class="navbar-brand" href="ContactUs.html">Contact Us</a>
+      </nav>
+    </br></br>
+    <div class= "container">
+        <div class="row">
+            <div class="col"> <h1>WELCOME TO MY</h1></div>
+            <div class="col-3 justify-content-center"><label class="text-dark" for="title">Title:</label></div>
+            <div class="col-5"><input type="text" id="title" class="form-control"/></div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col"><h1>SIMPLY BLOGGING</h1></div>
+            <div class="col-3 justify-content-center"><label class="text-dark" for="article">Articles:</label></div>
+            <div class="col-5"><textarea class="form-control" rows="1" id="article"></textarea></div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col justify-content-center"><h1>PAGE</h1></div>
+            <div class="col-3 justify-content-center"><label class="text-dark" for="image">Add Image:</label></div>
+            <div class="col-5"><input type="url" id="image" class="form-control"/></div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-3"></div>
+            <div class="d-flex justify-content-end"><input type="submit" value="Add Blog" class="btn btn-info" onclick="AddBlog()"></div>
+        </div>
+    </div>
+
+    <div class="container">
+       <div class="row" id="row">
+       </div>
+    </div>
+</body>
+</html>

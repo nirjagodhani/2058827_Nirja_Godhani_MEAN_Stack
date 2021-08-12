@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Main Page</title>
+    <script src="operations.js"></script>
+
+    <style>
+    
+        h1{
+            color:white; font-weight: bold;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body style= "background-color: lightblue;">
+    <nav class="navbar sticky-top navbar-dark bg-info">
+        <h1>WELCOME TO CART MANAGEMENT! </h1>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-text text-light "><b>cart size: </b></a>
+                <p id="value"></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="checkout.html"><b>Checkout</b></a>
+            </li>
+        </ul>
+    </nav>   
+    
+    
+    <div class= "row card_space">
+        <div class= "col-6">
+            <div class="card">
+                <img class="card-img-top" src="https://media.gettyimages.com/photos/bunch-of-green-grapes-laying-picture-id172304886?s=2048x2048" height="400">
+                <div class="class-body">
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Name:  Grapes </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Price:  $5.00</div>
+                    </div>
+                    <input class="btn btn-outline-info my-2 my-sm-0" value="Add" type="button" id="btnName" onclick="addData('Grapes',5)"/>
+                </div>
+            </div>
+        </div>
+
+        <div class= "col-6">
+            <div class="card">
+                <img class="card-img-top" src="https://media.gettyimages.com/photos/strawberry-isolated-on-a-white-background-picture-id1132335445?s=2048x2048" height="400">
+                <div class="class-body">
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Name:  Strawberry </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Price:  $2.00</div>
+                    </div>
+                    <input class="btn btn-outline-info my-2 my-sm-0" value="Add" type="button" id="btnName" onclick="addData('Strawberry',2)"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class= "row card_space">
+        <div class= "col-6">
+            <div class="card">
+                <img class="card-img-top" src="https://media.gettyimages.com/photos/peach-fruit-picture-id698052024?s=2048x2048" height="400">
+                <div class="class-body">
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Name:  Peach </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Price:  $4.00</div>
+                    </div>
+                    <input class="btn btn-outline-info my-2 my-sm-0" value="Add" type="button" id="btnName" onclick="addData('Peach',3)"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class= "col-6">
+            <div class="card">
+                <img class="card-img-top" src="https://media.gettyimages.com/photos/red-apples-picture-id157573143?s=2048x2048" height="400">
+                <div class="class-body">
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Name:  Apple </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 font-weight-bold"> Price:  $1.00</div>
+                    </div>
+                    <input class="btn btn-outline-info my-2 my-sm-0" value="Add" type="button" id="btnName" onclick="addData('Apple',1)"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<div  *ngIf="alertHideLogin">
+    <h2>Login</h2>
+    <form #loginRef="ngForm" (ngSubmit)="UserLogin(loginRef)">
+    <Label>Username</Label>
+        <input type="text" name="user" ngModel required/><br/>
+   
+        <label>Password</label>
+        <input type="password" name="pass" ngModel  required/><br/>
+   
+        <input type="submit" value="Login"  [disabled]="!loginRef.valid" /><br/>
+    
+    </form>
+    <br/>
+    {{printInfo}}
+
+</div><br/>
+
+   <div  *ngIf="alertHideLogin">
+       New User:
+       <input type="button" value="Signup" (click)="temp()"/>
+   </div>
+  
+    <div *ngIf="alertTemp" >
+        
+            <h3>Registration Form</h3>
+            <div>
+                <input type="button" value="Login Page" (click)="backToLogin()">
+            </div>
+            <form #signUpRef="ngForm" (ngSubmit)="createSign(signUpRef)">
+
+                    <label for="fnameSign">First Name</label>
+                    <input type="text" name="fnameSign" ngModel /><br/>
+                
+
+                    <label for="lnameSign">Last Name</label>
+                    <input type="text" name="lnameSign" ngModel/><br/>
+                
+
+                    <label for="unameSign">Username</label>
+                    <input type="text" name="unameSign" ngModel /><br/>
+                
+
+                    <label for="passSign">Password</label>
+                    <input type="text" name="passSign" ngModel />  <br/>    
+                
+                <input  type="submit" value="Register">
+                <input  type="reset" value="Reset">
+            
+            </form>
+    </div>
+  
+    <div *ngIf="showdata">
+        <p> <b> Welcome {{userName}} </b></p>
+            
+                <label for="cname">Contact Name</label>
+                <input type="text" name="cname" #cnameRef /><br/>
+        
+                <label for="pno">Phone No</label>
+                <input type="text" name="pno" #cnoRef /><br/>
+            
+                <input type="submit" value="Save" (click)="saveData(cnameRef, cnoRef)" /><br/>            
+                
+         <input type="button" value="Contact Details" (click)="click()"/>
+    </div>
+    <div *ngIf = "showTable">
+        <hr/>
+        <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Phone NO</th>
+                </tr>
+                <tr *ngFor="let per of perArray">
+                    <td>{{per.cName}}</td> 
+                    <td>{{per.cNo}}</td>
+
+                </tr>
+        </table>
+    </div>

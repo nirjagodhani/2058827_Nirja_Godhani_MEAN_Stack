@@ -1,0 +1,62 @@
+<div>
+    <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile [colspan]="3" > <h2>Task Tracker</h2></mat-grid-tile>
+        <mat-grid-tile [colspan]="1.45" [rowspan]="2">
+            <div>
+                <h2>To-do Tasks</h2>
+                    <form>
+                    <mat-form-field>
+                        <mat-label>Id</mat-label>
+                        <input matInput name="id" #idRef/>
+                     
+                    </mat-form-field>
+                    <br/>
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput name="name" #nameRef/>
+                    </mat-form-field>
+
+                    <br/>
+                    <mat-form-field>
+                        <mat-label>Task</mat-label>
+                        <input matInput name="task" #tnameRef/> 
+                        
+                    </mat-form-field>
+                    <br/>
+            
+                     <mat-form-field> 
+                        <mat-label>Task Due Date</mat-label>
+                        <input matInput name="tDue" #tdueRef/> 
+                                               
+                    </mat-form-field> 
+                    <br/>
+                    <button type="submit" mat-raised-button  (click)="loginUser(idRef,nameRef, tnameRef, tdueRef)">Submit</button>
+                    <button type="reset" mat-raised-button >Reset</button>
+                </form>
+            </div>
+            
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1.55" [rowspan]="2">
+            
+        <div *ngIf = "display">
+            <hr/>
+            <table border="1">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Task</th>
+                        <th>Task Date</th>
+                    </tr>
+                    <tr *ngFor="let task of tempArr">
+                        <td>{{task.id}}</td> 
+                        <td>{{task.name}}</td>
+                        <td>{{task.task}}</td>
+                        <td>{{task.deadline}}</td>
+                    </tr>
+            </table>
+        </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+</div>
+
+

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.task {
+    width: 100%;
+    justify-content: center;
+    table-layout: fixed;
+
+}
+
+
+.task th {
+    width: 25%;
+    overflow-wrap: break-word;
+    color: white;
+    background-color: blue;
+}
+
+.task td {
+    width: 25%;
+    overflow-wrap: break-word;
+    background-color: lightgray;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
